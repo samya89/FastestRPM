@@ -14,6 +14,8 @@
 		932915AB1ABB46C500C9DF23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932915AA1ABB46C500C9DF23 /* Images.xcassets */; };
 		932915AE1ABB46C600C9DF23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932915AC1ABB46C600C9DF23 /* LaunchScreen.xib */; };
 		932915BA1ABB46C600C9DF23 /* FastestRPMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 932915B91ABB46C600C9DF23 /* FastestRPMTests.m */; };
+		932915D21ABB4DD500C9DF23 /* speedometer1.png in Resources */ = {isa = PBXBuildFile; fileRef = 932915D11ABB4DD500C9DF23 /* speedometer1.png */; };
+		932915D41ABB4FEF00C9DF23 /* needlered2.png in Resources */ = {isa = PBXBuildFile; fileRef = 932915D31ABB4FEF00C9DF23 /* needlered2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		932915B31ABB46C600C9DF23 /* FastestRPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastestRPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932915B81ABB46C600C9DF23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932915B91ABB46C600C9DF23 /* FastestRPMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastestRPMTests.m; sourceTree = "<group>"; };
+		932915D11ABB4DD500C9DF23 /* speedometer1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speedometer1.png; sourceTree = "<group>"; };
+		932915D31ABB4FEF00C9DF23 /* needlered2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = needlered2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				9329159C1ABB46C500C9DF23 /* FastestRPM */,
 				932915B61ABB46C600C9DF23 /* FastestRPMTests */,
 				9329159B1ABB46C500C9DF23 /* Products */,
+				932915D11ABB4DD500C9DF23 /* speedometer1.png */,
+				932915D31ABB4FEF00C9DF23 /* needlered2.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				932915A91ABB46C500C9DF23 /* Main.storyboard in Resources */,
+				932915D21ABB4DD500C9DF23 /* speedometer1.png in Resources */,
+				932915D41ABB4FEF00C9DF23 /* needlered2.png in Resources */,
 				932915AE1ABB46C600C9DF23 /* LaunchScreen.xib in Resources */,
 				932915AB1ABB46C500C9DF23 /* Images.xcassets in Resources */,
 			);
