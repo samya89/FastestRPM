@@ -22,13 +22,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.needleStart = 135;
-    self.needle.transform = CGAffineTransformMakeRotation(self.needleStart * M_PI/180);
+//    self.needle.transform = CGAffineTransformMakeRotation(self.needleStart * M_PI/180);
+    [self moveNeedleWithPercentage:0];
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
     [self.view addGestureRecognizer:panGesture];
 }
 
-- (void)didPan:(id)sender
-{
+- (void)didPan:(id)sender {
     UIPanGestureRecognizer *panRecog = (UIPanGestureRecognizer *)sender;
     CGPoint vel = [panRecog velocityInView:self.view];
     self.velocityFloat = sqrt(pow(vel.x, 2) + pow(vel.y, 2));
@@ -40,30 +40,20 @@
     } else if (panRecog.state == UIGestureRecognizerStateEnded) {
         [self moveNeedleWithVelocity:self.needleStart];
     }
-    
-        NSLog(@"vel: %f", self.velocityFloat);
+//        NSLog(@"vel: %f", self.velocityFloat);
 }
 
-- (void)moveNeedleWithVelocity:(CGFloat)vel
-{
+- (void)moveNeedleWithVelocity:(CGFloat)vel {
     if (vel>4000.f) vel = 4000.f;
     [self moveNeedleWithPercentage:vel/4000.f];
 }
 
--(void)moveNeedleWithPercentage:(CGFloat)perc
-{
-    self.needle.transform = CGAffineTransformMakeRotation((135+270.f*perc) * M_PI/180);
+
+-(void)moveNeedleWithPercentage:(CGFloat)perc {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.needle.transform = CGAffineTransformMakeRotation((135+270.f*perc) * M_PI/180);
+    }];
 }
-
-
-//
-//- (void)moveNeedle:(CGFloat)velocity
-//{
-//    
-//}
-
-
-
 
 
 - (void)didReceiveMemoryWarning {
